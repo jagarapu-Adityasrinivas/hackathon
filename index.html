@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule and Task Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Class Schedule and Task Management Tool</h1>
+    </header>
+    <main>
+        <section id="schedule">
+            <h2>Class Schedule</h2>
+            <form id="scheduleForm">
+                <input type="text" id="className" placeholder="Class Name" required>
+                <input type="text" id="classTime" placeholder="Class Time (e.g., Mon 10:00 AM)" required>
+                <button type="submit">Add Class</button>
+            </form>
+            <input type="text" id="classSearch" placeholder="Search Classes">
+            <ul id="classList"></ul>
+        </section>
+        <section id="tasks">
+            <h2>Task Management</h2>
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Task Name" required>
+                <input type="date" id="taskDate" required>
+                <select id="taskPriority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+            <input type="text" id="taskSearch" placeholder="Search Tasks">
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
